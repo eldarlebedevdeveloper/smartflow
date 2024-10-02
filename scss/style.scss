@@ -1,0 +1,13 @@
+@import "additionally/_reset.scss";
+@import "additionally/_fonts";
+@import "additionally/variables";
+@import "additionally/components";
+@import "additionally/header";
+@import "additionally/footer";
+// Pages
+@import "home";
+@import "about";
+@import "platform";
+@import "analytics";
+@import "news";
+@import "contacts";

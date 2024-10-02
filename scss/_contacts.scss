@@ -1,0 +1,235 @@
+.contacts{
+    padding: calc(var(--indent) * 1) var(--indent) calc(var(--indent) * 1.5) var(--indent);
+    background: $color-grey-3;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 1rem;
+    &_map{
+        width: 100%;
+        height: 37rem;
+    }
+    &_details{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding: calc(var(--indent) * 1) calc(var(--indent) * 2) 0 calc(var(--indent) * 2) ;
+        &-item{
+            flex: 1;
+            padding: 2rem 1em 0rem 3rem;
+            border-radius: 1rem;
+            margin-right: 5rem;
+            .card_purple-text{
+                h3{
+                    margin-bottom: .5rem;
+                }
+                p{
+                    color: $color-black-2;
+                }
+            }
+            .card_purple-image{
+                margin-right: 1.5rem;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+.main_form{
+    flex-direction: column;
+    align-items: center;
+    padding: 3.5rem 0 5.5rem 0;
+    margin-top: 9.5rem;
+    margin-bottom: 9.5rem;
+    .repeated_2_left{
+        &-text{
+            p{
+                text-align: center;
+                margin-bottom: .5rem;
+            }
+        }
+    }
+    .repeated_2_right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: 1.5rem;
+        width: 50%;
+        .repeated_2_form{
+            justify-content: center;
+            .input_white{
+                margin-left: 0;
+                &:first-child,
+                &:nth-child(3){
+                    margin-right: 8rem;
+                }
+                &:first-child,
+                &:nth-child(2){
+                    margin-bottom: 2rem;
+                }
+            }
+            .button_black{
+                padding: 1.5rem 6.5rem;
+                margin-left: 0;
+                margin-top: 4.5rem;
+            }
+        }
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .contacts_map {
+        height: 50rem;
+    }
+    .contacts_details {
+        flex-direction: column;
+        &-item{
+            margin-right: 0;
+            padding: 4rem 4em 6rem 4rem;
+            border-radius: 2rem;
+            margin-bottom: 5rem;
+            .card_purple-image{
+                img{
+                    width: 6rem;
+                }
+            }
+            &:nth-child(2){
+                padding-bottom: 3rem;
+                .card_purple-image {
+                    margin-left: 2rem;
+                    margin-right: 0rem;
+                    img{
+                        width: 7rem;
+                    }
+                }
+            }
+            &:nth-child(3){
+                .card_purple-image {
+                    margin-left: -2rem;
+                    margin-right: 0rem;
+                    img{
+                        width: 6rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .main_form{
+        margin-top: 12rem;
+        margin-bottom: 12rem;
+        border-radius: 2rem;
+        padding: 7.5rem 0 7.5rem 0;
+        .repeated_2_right {
+            .repeated_2_form {
+                .input_white{
+                    &:first-child, 
+                    &:nth-child(2), 
+                    &:nth-child(3), 
+                    &:nth-child(4) {
+                        margin: 0 0 4rem 0;
+                        border-radius: 1.5rem;
+                    }
+                }
+                .button_black{
+                    padding: 2.5rem 18.5rem;
+                }
+            }
+            
+        }
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contacts{
+        padding-bottom: 3rem;
+    }
+    .contacts_map {
+        height: 64rem;
+        border-radius: 3rem;
+    }
+    .contacts_details{
+        padding: 11rem var(--indent) 0 var(--indent);
+        &-item {
+            padding: 5rem 4em 5rem 4rem;
+            border-radius: 4rem;
+            margin-bottom: 12rem;
+
+            .card_purple-image {
+                padding-left: 6.5rem;
+                img {
+                    width: 10rem;
+                }
+            }
+            .card_purple-text {
+                padding-left: 5rem;
+                h3 {
+                    font-size: 5rem;
+                    line-height: 8rem;
+                }
+                p {
+                    font-size: 4.5rem;
+                    line-height: 6rem;
+                }
+            }
+            &:nth-child(2) {
+                padding: 6rem 4em 6rem 4rem;
+                .card_purple-image {
+                    padding-left: 3rem;
+                    img {
+                        width: 12rem;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                padding: 6rem 4em 6rem 4rem;
+                .card_purple-image {
+                    padding-left: 8rem;
+                    img {
+                        width: 8rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .main_form {
+        margin-top: 20rem;
+        padding: 12.5rem 0 7.5rem 0;
+        border-radius: 4rem;
+        .repeated_2_left-text {
+            p{
+                text-align: center;
+                margin-bottom: 2.5rem;
+            }
+            h2 {
+                text-align: center;
+                font-size: 9.2rem;
+                line-height: 10rem;
+                margin-bottom: 10rem;
+            }
+        }
+        .repeated_2_right{
+            .repeated_2_form {
+                input {
+                   &:first-child,
+                   &:nth-child(2),
+                   &:nth-child(3),
+                   &:nth-child(4)
+                   {
+                    padding: 6.2rem 7rem;
+                    border-radius: 3rem!important;
+                    margin-bottom: 9rem!important;
+                   }
+                }
+                .button_black {
+                    padding: 6.2rem 31rem;
+                    margin-top: 6rem;
+                    border-radius: 3rem;
+                }
+            }
+           
+        }
+       
+    }
+}

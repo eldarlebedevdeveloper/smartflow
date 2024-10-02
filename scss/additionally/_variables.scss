@@ -1,0 +1,22 @@
+$color-black: #000000;
+$color-black-2: rgba(0, 0, 0, 0.5);
+$color-black-3: #1E1E1E;
+$color-grey: #A6A6A6;
+$color-grey-2: #F1F1F1;
+$color-grey-3: #f7f7f7;
+$color-white: #ffffff;
+$color-blue: #301EFF;
+$gradient-1:  linear-gradient(275.54deg, rgba(48, 30, 255, 0.2) -5.68%, rgba(34, 30, 255, 0.118) 65.82%);
+$gradient-2: linear-gradient(275.54deg, rgba(48, 30, 255, 0.5) -5.68%, rgba(34, 30, 255, 0.295) 65.82%);
+$gradient-3: conic-gradient(from -79.06deg at 50% 50%, rgba(34, 30, 255, 0.59) -140.47deg, #EBEBEB 40.85deg, rgba(34, 30, 255, 0.59) 219.53deg, #EBEBEB 400.85deg);
+$indend: 4.5vw;
+
+:root {
+    --indent: 4.5vw;
+}
+
+@media screen and (max-width:768px) {
+    :root {
+        --indent: 5.5vw;
+    }
+}

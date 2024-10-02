@@ -1,0 +1,394 @@
+.leaders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: calc(var(--indent) * 2.9);
+
+    > p {
+        text-align: center;
+        margin-top: 1.4rem;
+        width: 55%;
+    }
+    &_container {
+        width: 100%;
+        background: $gradient-2;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+
+        padding: calc(var(--indent) * 0.7) var(--indent) calc(var(--indent) * 1.4) var(--indent);
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        &-item {
+            width: 47%;
+            // padding: ;
+            display: flex;
+            align-items: flex-start;
+            margin-top: 13.8rem;
+            .card-image {
+                flex: 1;
+                position: relative;
+                height: 100%;
+                img {
+                    position: absolute;
+                    bottom: 0;
+                    width: 22rem;
+                }
+            }
+            .card-text {
+                flex: 1;
+                padding: 1.5rem 2rem 1.2rem 1rem;
+                h3 {
+                    margin-bottom: 0.5rem;
+                }
+                h2 {
+                    margin-bottom: 1.3rem;
+                }
+            }
+            &:nth-child(2) {
+                .card-image {
+                    img {
+                        width: 41.9rem;
+                        left: -8.5rem;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                margin-top: 18.5rem;
+                .card-image {
+                    img {
+                        width: 37.9rem;
+                        left: -5rem;
+                    }
+                }
+                .card-text {
+                    padding-bottom: 2.5rem;
+                }
+            }
+            &:last-child {
+                margin-top: 18.5rem;
+                .card-image {
+                    img {
+                        width: 47em;
+                        left: -20rem;
+                    }
+                }
+            }
+        }
+    }
+}
+.accounts {
+    padding: calc(var(--indent) * 2.45) var(--indent) var(--indent) var(--indent);
+    display: flex;
+    align-items: flex-start;
+    &_text {
+        flex: 1;
+        h2 {
+            width: 70%;
+        }
+        p {
+            margin-top: 5rem;
+            width: 87%;
+            &:last-child {
+                margin-top: 2rem;
+            }
+        }
+    }
+    &_graph {
+        flex: 1;
+        display: flex;
+        align-items: flex-start;
+        margin-top: -3rem;
+        margin-left: 2rem;
+        border-radius: 2rem;
+        height: 30rem;
+        filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.15));
+        border-radius: 1.5rem;
+        img {
+            width: 100%;
+        }
+    }
+}
+.trade {
+    display: flex;
+    padding: calc(var(--indent) * 0.7) var(--indent) calc(var(--indent) * 1.5) var(--indent);
+    margin-bottom: 1.9rem;
+
+    &_content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 23%;
+        .button_black {
+            margin-top: 3rem;
+            padding: 1.5rem 5.3rem;
+        }
+    }
+    &_cards {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5rem;
+        .card_purple {
+            flex: 1;
+            padding: 2.5rem 3.5rem 0 3.5rem;
+            &-text {
+                padding: 0.2rem 0 0 1rem;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .leaders {
+        margin-top: calc(var(--indent) * 4);
+        > h2 {
+        }
+        > p {
+            font-size: 3rem;
+            line-height: 3.8rem;
+            color: rgba(0, 0, 0, 0.5);
+            font-weight: 600;
+            width: 75%;
+        }
+        &_container {
+            flex-direction: column;
+            align-items: center;
+            &-item {
+                width: 90%;
+                border-radius: 2rem;
+                align-items: center;
+                margin-top: 11rem;
+                .card-image {
+                    margin-top: -9rem;
+                    img {
+                        width: 29rem;
+                        position: relative;
+                        bottom: 0;
+                    }
+                }
+                .card-text {
+                    flex: 1.5;
+                    padding: 6.5rem 2rem 6.5rem 1rem;
+                }
+                &:nth-child(2) {
+                    margin-top: 17rem;
+                    .card-image img {
+                        width: 54rem;
+                        left: -11.5rem;
+                    }
+                }
+                &:nth-child(3) {
+                    margin-top: 16.5rem;
+                    .card-image img {
+                        width: 58.9rem;
+                        left: -9rem;
+                    }
+                    .card-text {
+                        padding: 6.5rem 2rem 6.5rem 1rem;
+                    }
+                }
+                &:last-child {
+                    margin-top: 15.5rem;
+                    .card-image img {
+                        width: 70em;
+                        left: -31rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .accounts {
+        flex-direction: column;
+        &_text {
+            text-align: center;
+            h2 {
+                width: 100%;
+            }
+            p {
+                width: 100%;
+            }
+        }
+        &_graph {
+            margin-top: 5rem;
+        }
+    }
+
+    .trade {
+        flex-direction: column;
+        &_content {
+            width: 100%;
+            h2 {
+                text-align: center;
+                width: 100%;
+                margin-bottom: 5rem;
+                br {
+                    display: none;
+                }
+            }
+            .button_black {
+                margin: 0 auto 7rem auto;
+                padding: 3rem 15rem;
+                border-radius: 2rem;
+                h3 {
+                    font-size: 3rem;
+                }
+            }
+        }
+        &_cards {
+            grid-template-columns: repeat(1, 1fr);
+            .card_purple {
+                flex: 1;
+                padding: 7.5rem 6.5rem 8rem 6.5rem;
+                margin-bottom: 5rem;
+            }
+            .card_purple-text {
+                padding-left: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .leaders {
+        margin-top: 22.5rem;
+        > p {
+            font-size: 4.3rem;
+            line-height: 4.8rem;
+            margin-top: 3.5rem;
+            width: 90%;
+        }
+        &_container {
+            margin-top: 5rem;
+            border-radius: 0;
+            padding-bottom: 12rem;
+            border-radius: 2rem;
+            &-item {
+                width: 100%;
+                border-radius: 2.5rem;
+                margin-top: 27rem;
+                align-items: end;
+                .card-image {
+                    margin: -23rem 8.5rem 0 -2rem;
+                    img {
+                        width: 46rem;
+                        position: absolute;
+                    }
+                }
+                .card-text {
+                    flex: 1.5;
+                    padding: 2.5rem 2rem 3rem 1rem;
+                    h3 {
+                        margin-bottom: 0rem;
+                        font-size: 4rem;
+                    }
+                    h2 {
+                        margin-bottom: 0.5rem;
+                    }
+                    p {
+                        font-size: 3.7rem;
+                    }
+                }
+                &:nth-child(2) {
+                    margin-top: 28rem;
+                    .card-image {
+                        img {
+                            width: 82rem;
+                            left: -15.5rem;
+                        }
+                    }
+                    .card-text {
+                        padding-bottom: 0;
+                        p {
+                            padding-bottom: 2rem;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    margin-top: 30rem;
+                    .card-image {
+                        img {
+                            width: 82rem;
+                            left: -15rem;
+                        }
+                    }
+                    .card-text {
+                        padding: 2.5rem 2rem 10rem 1rem;
+                    }
+                }
+                &:nth-child(4) {
+                    margin-top: 30rem;
+                    .card-image {
+                        img {
+                            width: 103em;
+                            left: -45rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .accounts {
+        padding: calc(var(--indent) * 3) var(--indent) var(--indent) var(--indent);
+        p {
+            margin-top: 8rem;
+            font-size: 4rem;
+            // padding: 0 5rem;
+            &:last-child {
+                margin-top: 5rem;
+            }
+        }
+        &_graph {
+            margin-top: 6rem;
+        }
+    }
+    .trade {
+        padding: calc(var(--indent) * 2.1) var(--indent) calc(var(--indent) * 1) var(--indent);
+        &_content {
+            h2 {
+                font-size: 10rem;
+                line-height: 10.5rem;
+                margin-bottom: 6.5rem;
+                br {
+                    display: none;
+                }
+            }
+            .button_black {
+                padding: 3.5rem 17rem;
+                margin-bottom: 13rem;
+                h3 {
+                    font-size: 4.5rem;
+                }
+            }
+        }
+        .trade_cards {
+            .card_purple {
+                flex: 1;
+                padding: 9.5rem 5rem 10rem 4.5rem;
+                border-radius: 2rem;
+                margin-bottom: 14rem;
+                h2 {
+                    font-size: 9.5rem;
+                    line-height: 9.5rem;
+                }
+                &-text {
+                    padding-left: 6.5rem;
+                    h3 {
+                        font-size: 5rem;
+                        line-height: 6rem;
+                        margin: 2rem 0 2.2rem 0;
+                    }
+                    p {
+                        font-size: 4.3rem;
+                        line-height: 4.8rem;
+                    }
+                }
+                &:last-child {
+                    padding-left: 10rem;
+                    padding-bottom: 5rem;
+                }
+            }
+        }
+    }
+}

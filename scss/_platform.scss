@@ -1,0 +1,490 @@
+.trade_platform {
+    margin-top: 4vw;
+    flex-wrap: wrap;
+    .repeated_1_left {
+        justify-content: center;
+        width: 37%;
+        box-sizing: border-box;
+        h1 {
+            margin-top: 2rem;
+        }
+        p {
+            margin-bottom: 5rem;
+        }
+    }
+    .repeated_1_right {
+        box-sizing: border-box;
+
+        width: 63%;
+        &-container {
+            background: $color-grey-2;
+        }
+        img {
+            position: relative;
+            right: 0;
+            width: 108%;
+            bottom: 14rem;
+            top: auto;
+            margin-bottom: -15rem;
+        }
+    }
+    .repeated_1_bottom {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 3.5rem;
+        p {
+            width: 62%;
+        }
+    }
+}
+
+.redy {
+    display: flex;
+    justify-content: space-between;
+    padding: calc(var(--indent) * 1.8) var(--indent) 0 var(--indent);
+    &_item {
+        padding: 4.8rem 3rem 2.5rem 3rem;
+        flex: 1;
+        .card_purple-image {
+            margin-right: 3rem;
+        }
+        h3 {
+            margin-bottom: 2rem;
+        }
+        p {
+            margin-bottom: 2.5rem;
+        }
+        a {
+            display: flex;
+            align-items: center;
+            h3 {
+                margin-bottom: 0;
+            }
+            &::before {
+                content: "";
+                width: 2rem;
+                height: 0.1rem;
+                margin-right: 0.5rem;
+                background-color: $color-black;
+                display: block;
+            }
+        }
+        &:first-child {
+            margin-right: 5rem;
+        }
+    }
+}
+
+.instuments {
+    display: flex;
+    padding: calc(var(--indent) * 1.7) var(--indent) 0 var(--indent);
+    &_text {
+        width: 42%;
+        h2 {
+            text-align: left;
+            margin-top: 5rem;
+        }
+        p {
+            text-align: left;
+            margin-top: 1.5rem;
+            margin-right: 6rem;
+        }
+    }
+    &_cards {
+        flex: 1;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 3rem 4em;
+        &-item {
+            padding: 1rem 1rem 1rem 1.5rem;
+            box-sizing: border-box;
+            .card-image {
+                width: 2.8rem;
+                margin-right: 1.5rem;
+                img {
+                    width: 100%;
+                }
+            }
+
+            &:nth-child(2) {
+                .card-image {
+                    margin-right: 1rem;
+                }
+            }
+        }
+    }
+}
+
+.popular_instruments {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: calc(var(--indent) * 1.5) var(--indent) calc(var(--indent) * 1.3) var(--indent);
+    margin-top: calc(var(--indent) * 1.8);
+    background: $color-grey-3;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    p:nth-child(2) {
+        margin-top: 4.5rem;
+        width: 58%;
+        text-align: center;
+        color: $color-black-2;
+    }
+    &-graph {
+        margin-top: 5rem;
+        width: 100%;
+        height: 45rem;
+        overflow: hidden;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    p:last-child {
+        margin-top: 2.7rem;
+    }
+}
+
+.platform_start {
+    margin-top: calc(var(--indent) * 1.9);
+    margin-bottom: calc(var(--indent) * 1.9);
+    padding: 4rem 9rem 5rem 3.8rem;
+
+    .repeated_2_left {
+        flex: 0 0 30%;
+        &-text {
+            h2 {
+                margin-top: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    }
+    .repeated_2_right {
+        .button_black {
+            padding: 1.5rem 3.2rem;
+            margin-left: 7rem;
+        }
+        .button_white {
+            padding: 1.5rem 3.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .trade_platform {
+        margin-top: 5vw;
+        .repeated_1_right {
+            img {
+                width: 90%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .trade_platform {
+        margin-top: 0;
+        .repeated_1_left {
+            padding: 0;
+            justify-content: center;
+            width: 100%;
+            h1 {
+                width: 60%;
+                margin: 0 auto 4rem auto;
+                text-align: center;
+            }
+            p {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .repeated_1_right {
+            box-sizing: border-box;
+            width: 100%;
+            .repeated_1_right-container {
+                border-radius: 2rem;
+            }
+            img {
+                width: 80%;
+                bottom: 0;
+                margin: 5rem auto 0 auto;
+            }
+        }
+        .repeated_1_bottom {
+            width: 100%;
+            p {
+                margin: 3rem auto 0 auto;
+                text-align: center;
+                width: 70%;
+            }
+        }
+    }
+    .redy {
+        flex-direction: column;
+        padding: 8rem 0 0 0;
+        &_item {
+            padding: 8rem var(--indent) 8rem var(--indent);
+            border-radius: 2rem;
+            h3 {
+                margin-bottom: 3rem;
+            }
+            p {
+                margin-bottom: 5rem;
+            }
+            &:first-child {
+                margin-right: 0;
+                margin-bottom: 10rem;
+            }
+        }
+    }
+    .instuments {
+        flex-direction: column;
+        padding-top: 5rem;
+        &_text {
+            width: 100%;
+            h2 {
+                text-align: center;
+                margin-bottom: 3rem;
+            }
+            p {
+                text-align: center;
+                width: 60%;
+                margin: 0 auto 5rem auto;
+            }
+        }
+        &_cards {
+            grid-template-columns: repeat(1, 1fr);
+            grid-gap: 5rem 4em;
+            &-item {
+                margin: 0 auto;
+                width: 50%;
+                padding: 5rem 1rem 6rem 3.5rem;
+                .card-image {
+                    width: 6.8rem;
+                    margin-right: 0;
+                }
+                .card-text {
+                    h3 {
+                        text-align: center;
+                        font-size: 3rem;
+                        margin-left: -3.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .popular_instruments {
+        &-graph {
+            height: 75rem;
+        }
+        p:last-child {
+            margin-top: 4.7rem;
+            text-align: center;
+            width: 58%;
+        }
+    }
+
+    .platform_start {
+        .repeated_2_right {
+            .button_white {
+                margin-top: 3rem;
+            }
+            .button_black {
+                margin-left: 0;
+                margin-top: 3rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .trade_platform {
+        margin-top: 11rem;
+        .repeated_1_left {
+            h1 {
+                width: 100%;
+                margin-bottom: 4.5rem;
+                br {
+                    display: block;
+                }
+            }
+        }
+        .repeated_1_right {
+            margin-bottom: 9rem;
+            img {
+                width: 90%;
+                bottom: 1rem;
+                margin: 10rem 16rem 0 auto;
+            }
+        }
+        .button_black {
+            padding: 3.5rem 15rem;
+        }
+        .repeated_1_bottom {
+            width: 100%;
+            margin-top: 8rem;
+            p {
+                width: 95%;
+            }
+        }
+    }
+    .redy {
+        flex-direction: column;
+        padding: 13rem 0 0 0;
+        .redy_item {
+            padding: 12rem var(--indent) 8rem var(--indent);
+
+            .card_purple-text {
+                padding-left: 1rem;
+                h3 {
+                    margin-bottom: 8rem;
+                    font-size: 5rem;
+                }
+                p {
+                    font-size: 4rem;
+                    line-height: 4.8rem;
+                    margin-bottom: 12rem;
+                }
+                a {
+                    h3 {
+                        margin-bottom: 0;
+                    }
+                    &::before {
+                        content: "";
+                        width: 3rem;
+                        height: 0.1rem;
+                        margin-right: 2rem;
+                    }
+                }
+            }
+            &:first-child {
+                margin-right: 0;
+                margin-bottom: 16rem;
+            }
+            &:last-child {
+                .card_purple-text {
+                    p {
+                        width: 95%;
+                        margin-bottom: 4.5rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .instuments {
+        padding-top: 12.5rem;
+        &_text {
+            h2 {
+                margin-bottom: 5rem;
+            }
+            p {
+                width: 100%;
+                margin-bottom: 6rem;
+            }
+        }
+        &_cards {
+            padding-bottom: 4rem;
+            grid-gap: 7rem 4em;
+            &-item {
+                width: 65%;
+                padding: 5.5rem 1rem 6rem 7rem;
+                border-radius: 2rem;
+                .card-image {
+                    width: 10.2rem;
+                }
+                .card-text {
+                    h3 {
+                        font-size: 5rem;
+                    }
+                }
+                &:nth-child(2) {
+                    .card-image {
+                        margin-right: 0rem;
+                        width: 12rem;
+                        margin-left: -3rem;
+                    }
+                }
+                &:nth-child(3) {
+                    .card-image {
+                        margin-right: 0rem;
+                        width: 15rem;
+                        margin-left: 0rem;
+                    }
+                }
+                &:nth-child(4) {
+                    .card-image {
+                        margin-top: -1rem;
+                        width: 15rem;
+                        margin-left: 0rem;
+                    }
+                }
+                &:nth-child(5) {
+                    .card-image {
+                        margin-right: 0rem;
+                        width: 12rem;
+                        margin-left: -1.5rem;
+                    }
+                }
+                &:nth-child(6) {
+                    .card-image {
+                        width: 15rem;
+                        margin-top: -2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .popular_instruments {
+        margin-top: 13rem;
+        padding-bottom: 12rem;
+        border-radius: 2rem;
+        h2 {
+            text-align: center;
+            margin-top: 4.5rem;
+        }
+        p {
+            font-size: 4.1rem;
+        }
+        p:nth-child(2) {
+            margin-top: 5.5rem;
+            width: 100%;
+        }
+        &-graph {
+            height: 148rem;
+        }
+        p:last-child {
+            margin-top: 9.7rem;
+            text-align: center;
+            width: 100%;
+        }
+    }
+    .platform_start {
+        margin-top: 21rem;
+        padding: 9rem 9rem 13rem 9rem;
+        margin-bottom: 22rem;
+        .repeated_2_left-text {
+            h2 {
+                margin-top: 0.5rem;
+                margin-bottom: 7.5rem;
+            }
+            p {
+                margin-bottom: 12rem;
+            }
+        }
+        .repeated_2_right {
+            .button_white {
+                padding: 4.5rem 20rem;
+                border-radius: 2rem;
+            }
+            .button_black {
+                padding: 4.5rem 20rem;
+                margin-left: 0;
+                margin-top: 8.5rem;
+                border-radius: 2rem;
+            }
+        }
+    }
+}

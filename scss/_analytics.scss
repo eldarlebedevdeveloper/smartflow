@@ -1,0 +1,382 @@
+.market {
+    h1 {
+        margin-top: 9rem;
+    }
+    h2 {
+        margin-top: 3rem;
+        width: 60%;
+    }
+    &_container {
+        grid-template-columns: repeat(4, 23%);
+        grid-column-gap: 2.2rem;
+        padding: 0 0 0 0;
+        bottom: -7rem;
+        justify-content: center;
+        margin-bottom: 0rem;
+        &-item {
+            img {
+                width: 100%;
+            }
+            .tradingview-widget-container {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+.analytics_graphs {
+    background: $color-grey-2;
+    padding: calc(var(--indent) * 1.5) var(--indent) calc(var(--indent) * 2.1) var(--indent);
+    margin-top: calc(var(--indent) * 3.2);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    .econoimic {
+        &_graph {
+            height: 45.5rem;
+        }
+    }
+    .market-condition {
+        margin-top: 5rem;
+        &_graph {
+            height: 52rem;
+        }
+    }
+    .data {
+        margin-top: 9.5rem;
+        display: flex;
+        max-width: 100%;
+        h2 {
+            margin-bottom: 1rem;
+        }
+        p {
+            margin-bottom: 3.7rem;
+        }
+        &_leaders {
+            flex: 1;
+            margin-right: 5rem;
+            &-graph {
+                width: 100%;
+                height: 62rem;
+                overflow: hidden;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+        &_fundamental {
+            flex: 1;
+            p {
+                margin-bottom: 2.2rem;
+            }
+            &-graph {
+                height: 62rem;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+            .tradingview-widget-container {
+                margin-top: -8%;
+            }
+        }
+    }
+    .real-time {
+        margin-top: 6.5rem;
+        h2 {
+            margin-bottom: 1.5rem;
+        }
+        p {
+            margin-bottom: 5rem;
+        }
+        &_graph {
+            height: 54rem;
+        }
+    }
+    .forex {
+        margin-top: 8.3rem;
+        p {
+            margin-bottom: 4.2rem;
+            width: 55%;
+        }
+        &-graph {
+            height: 45rem;
+        }
+    }
+}
+
+.analytic_baner {
+    margin: 10rem 4.5vw 10rem 4.5vw;
+    padding: 2.5rem 4.7rem 3rem 4.5rem;
+    .repeated_2_left {
+        flex: 0 0 50%;
+        img {
+            width: 6.5rem;
+        }
+        &-text {
+            padding: -0 0 0 3.5rem;
+            h2 {
+                margin-bottom: 0.5rem;
+            }
+            h3 {
+                width: 80%;
+            }
+        }
+    }
+    .repeated_2_right {
+        p {
+            margin-top: 1.8rem;
+            width: 70%;
+        }
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .market {
+        h1 {
+            margin-top: 7rem;
+        }
+        h2 {
+            margin-top: 3rem;
+            width: 60%;
+        }
+        &_container {
+            grid-template-columns: repeat(2, 50%);
+            margin-bottom: -4rem;
+            bottom: -5rem;
+            &-item {
+                min-height: 280px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .market {
+        padding-bottom: 10rem;
+        &_container {
+            grid-template-columns: repeat(2, 0.8fr);
+            grid-gap: 4rem 4rem;
+            padding: 0 0 0 0;
+            bottom: 0;
+            margin-bottom: 0;
+            margin-top: 5rem;
+            &-item {
+                padding: 0;
+                margin-bottom: 0;
+                min-height: 280px;
+            }
+        }
+    }
+    .analytics_graphs {
+        margin-top: 20rem;
+        h2 {
+            margin-bottom: 3rem;
+        }
+        p {
+            margin-bottom: 8rem;
+            width: 90%;
+        }
+        .econoimic_graph {
+            height: 100rem;
+        }
+        .market-condition_graph {
+            height: 100rem;
+        }
+        .condition_graph {
+            height: 100rem;
+        }
+        .data_leaders p {
+            margin-bottom: 7.7rem;
+        }
+        .real-time_graph {
+            height: 100rem;
+        }
+        .forex-graph {
+            height: 100rem;
+        }
+    }
+    .analytic_baner {
+        border-radius: 2rem;
+        padding: 3.5rem 5.7rem 4rem 5.5rem;
+        .repeated_2_left {
+            width: 100%;
+            img {
+                width: 14.5rem;
+            }
+            &-text {
+                h2 {
+                    margin-bottom: 0.5rem;
+                    text-align: left;
+                }
+            }
+        }
+        .repeated_2_right {
+            p {
+                margin-top: 3.8rem;
+                width: 100%;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .market {
+        margin-top: 8rem;
+        border-radius: 2rem;
+        padding-bottom: 15rem;
+        h1 {
+            margin-top: 13rem;
+            font-size: 10rem;
+        }
+        h2 {
+            margin-top: 6rem;
+            width: 84%;
+        }
+        &_container {
+            grid-template-columns: repeat(1, 100%);
+            padding: 0 var(--indent);
+            grid-gap: 5rem;
+            &-item {
+                min-height: 270px;
+                overflow: hidden;
+                padding: 0;
+                &:nth-child(2),
+                &:nth-child(3),
+                &:nth-child(4) {
+                    padding: 0;
+                }
+            }
+        }
+    }
+    .analytics_graphs {
+        h2 {
+            margin-bottom: 4.5rem;
+            margin-top: 0.8rem;
+            width: 65%;
+            text-align: center;
+            line-height: 7rem;
+        }
+        p {
+            margin-bottom: 7rem;
+            width: 100%;
+        }
+        .econoimic_graph {
+            height: 118rem;
+            border-radius: 3rem;
+        }
+        .market-condition {
+            h2 {
+                margin-top: 4.5rem;
+                margin-bottom: 3.5rem;
+            }
+            p {
+                margin-bottom: 6.5rem;
+            }
+            &_graph {
+                border-radius: 3rem;
+                height: 153rem;
+            }
+        }
+        .data {
+            flex-direction: column;
+            .data_leaders {
+                margin-right: 0;
+                h2 {
+                    margin-top: -0.5rem;
+                    margin-bottom: 3rem;
+                    margin-right: 0;
+                    width: 100%;
+                }
+                p {
+                    margin-bottom: 3rem;
+                    text-align: center;
+                }
+                &-graph {
+                    height: 132rem;
+                    border-radius: 3rem;
+                }
+            }
+            .data_fundamental {
+                h2 {
+                    width: 100%;
+                    margin-top: 16rem;
+                    margin-bottom: 4rem;
+                }
+                p {
+                    text-align: center;
+                    margin-bottom: 5rem;
+                }
+                &-graph {
+                    height: 132rem;
+                    overflow: hidden;
+                    border-radius: 3rem;
+                }
+            }
+        }
+        .real-time {
+            h2 {
+                margin-bottom: 4rem;
+                margin-top: 10rem;
+                width: 100%;
+            }
+            p {
+                margin-bottom: 5rem;
+            }
+            &_graph {
+                border-radius: 3rem;
+                height: 61rem;
+            }
+        }
+        .forex {
+            margin-top: 10.3rem;
+            h2 {
+                margin-bottom: 5rem;
+                margin-top: 0.8rem;
+                width: 100%;
+            }
+            p {
+                margin-bottom: 7.2rem;
+                width: 100%;
+            }
+            &-graph {
+                border-radius: 3rem;
+                height: 115rem;
+            }
+        }
+    }
+    .analytic_baner {
+        margin: 19rem 4.5vw 19rem 4.5vw;
+        padding: 8.5rem 5.7rem 4rem 6rem;
+        border-radius: 3rem;
+        .repeated_2_left {
+            img {
+                width: 25.5rem;
+            }
+            &-text {
+                h2 {
+                    margin-bottom: 0.5rem;
+                    margin-top: 3rem;
+                    text-align: left;
+                }
+                h3 {
+                    width: 100%;
+                    margin-top: 1.5rem;
+                }
+            }
+        }
+        .repeated_2_right {
+            p {
+                margin-top: 7.8rem;
+                width: 91%;
+                margin-bottom: 4rem;
+                text-align: center;
+            }
+        }
+    }
+}

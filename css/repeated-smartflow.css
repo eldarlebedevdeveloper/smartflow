@@ -1,0 +1,253 @@
+.max_h1 {
+  font-size: 7rem;
+  line-height: 7rem;
+}
+.center_h1 {
+  font-size: 4rem;
+  line-height: 4rem;
+}
+h1 {
+  font-size: 48px;
+  line-height: 55px;
+  text-transform: uppercase;
+}
+h2 {
+  font-size: 36px;
+  font-size: 2.3rem;
+  line-height: 2.5rem;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 24px;
+  font-size: 1.5rem;
+  color: #f0f0f0;
+}
+h4 {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  color: #f0f0f0;
+}
+p {
+  font-size: 20px;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+li {
+  font-family: inter-Regular;
+  font-size: 20px;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: #f0f0f0;
+}
+.blue {
+  color: #233dff;
+}
+.black {
+  color: #000000;
+}
+.card {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 0.7rem;
+  box-shadow: none;
+  border: 2px solid #1e1e1e;
+  background: none;
+  padding: 2rem 2rem;
+}
+.card h3 {
+  text-align: center;
+}
+.card p {
+  text-align: center;
+}
+.button_white {
+  background: none;
+  border: 2px solid #f0f0f0;
+}
+.button_white h3 {
+  color: #f0f0f0;
+}
+.button_black {
+  background-color: #111111;
+}
+
+/* footer */
+.footer {
+  background: #1e1e1e;
+  padding: var(--indent) var(--indent) calc(var(--indent) * 2) var(--indent);
+}
+.footer_content h3 {
+  margin-top: var(--indent);
+}
+.footer_content p {
+  width: 60%;
+  margin: 1rem auto 0 auto;
+  color: #797979;
+}
+.footer_content h4 {
+  margin-top: 4.5rem;
+  color: #d9d9d9;
+}
+.footer_header .footer_logo img {
+  width: 12rem;
+  margin-top: -2.5rem;
+  margin-left: -0.5rem;
+}
+.footer_menu li h3 {
+  font-weight: 500;
+}
+.top_section_repeated {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  background: #262b2f;
+  width: 100%;
+  padding: 0 var(--indent);
+  box-sizing: border-box;
+}
+.top_section_repeated_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex: 0 0 35%;
+}
+.top_section_repeated_container h1 {
+  color: #f0f0f0;
+  margin-bottom: 1.5rem;
+}
+.top_section_repeated_container p {
+  margin-bottom: 1rem;
+}
+.top_section_repeated_container .button_blue {
+  margin-top: 3rem;
+  padding: 1.4rem 5.5rem;
+  border-radius: 0.7rem;
+  box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.top_section_repeated_image {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 0 0 55%;
+}
+
+@media screen and (max-width: 768px) {
+  .max_h1 {
+    font-size: 12rem;
+    line-height: 14rem;
+  }
+  .center_h1 {
+    font-size: 6rem;
+    line-height: 8rem;
+  }
+  h1 {
+    font-size: 9rem;
+    line-height: 10rem;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+  p,
+  li {
+    font-size: 2.25rem;
+    line-height: 2.7rem;
+  }
+
+  .repeated_2_left {
+    flex: 0 0 100%;
+    width: 100%;
+  }
+  .repeated_2_left-text {
+    width: 100%;
+  }
+  .repeated_2_left-text p {
+    text-align: center;
+  }
+  .repeated_2_right {
+    flex: 1 0 100%;
+    width: 100%;
+  }
+  .repeated_2 .repeated_2_form input {
+    padding: 3rem 10rem;
+    border-radius: 1.5rem;
+    margin-top: 4rem;
+  }
+  .repeated_2 .repeated_2_form button {
+    border: 0;
+    padding: 2.5rem 18rem;
+    border-radius: 1.5rem;
+  }
+
+  .repeated_3 h2 {
+    font-size: 4rem;
+    line-height: 4.5rem;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .max_h1 {
+    font-size: 14rem;
+    line-height: 16rem;
+  }
+  .center_h1 {
+    font-size: 8rem;
+    line-height: 10rem;
+  }
+  h2 {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+  h3 {
+    font-size: 5rem;
+    line-height: 5.5rem;
+  }
+  p,
+  li {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+
+  .repeated_2 .repeated_2_left-text h2 {
+    text-align: center;
+    font-size: 7rem;
+    line-height: 6.5rem;
+    margin-bottom: 2rem;
+  }
+  .repeated_2 .repeated_2_left-text p {
+    text-align: center;
+    margin-right: 0;
+    padding: 0 15rem;
+    font-size: 3.5rem;
+    line-height: 4.5rem;
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    margin-bottom: 3rem;
+    color: #f0f0f0;
+  }
+  .repeated_2 .repeated_2_form input {
+    margin-bottom: 3rem;
+  }
+  .repeated_2 .repeated_2_form button {
+    border: 0;
+    padding: 3.5rem 31rem;
+    border-radius: 1.5rem;
+  }
+  .button_white h3 {
+    font-size: 3rem;
+    line-height: 3.5rem;
+  }
+}
